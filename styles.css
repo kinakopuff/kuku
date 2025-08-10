@@ -1,93 +1,54 @@
 /* styles.css */
-* {
-  box-sizing: border-box;
-  font-family: system-ui, sans-serif;
-}
+* { box-sizing: border-box; font-family: system-ui, sans-serif; }
 
-html {
-  font-size: 18px;
-}
+html { font-size: 18px; }
 
 body {
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background: #f5f5f5;
+  margin: 0; display: flex; justify-content: center; align-items: center;
+  height: 100vh; background: #f5f5f5;
 }
 
-.screen {
-  width: 100%;
-  max-width: 600px;
-}
-
-.hidden {
-  display: none;
-}
+.screen { width: 100%; max-width: 600px; }
+.hidden { display: none; }
 
 .card {
-  position: relative;
-  background: #ffffff;
-  padding: 2.5rem;
-  border-radius: 1.2rem;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
-  text-align: center;
+  position: relative; background: #fff; padding: 2.5rem; border-radius: 1.2rem;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12); text-align: center;
 }
 
-label {
-  margin-right: 0.6rem;
-  font-size: 1.1rem;
-}
+label { margin-right: 0.6rem; font-size: 1.1rem; }
 
 select, button {
-  margin: 0.6rem 0.3rem;
-  padding: 0.7rem 1.2rem;
-  border-radius: 0.6rem;
-  border: 1px solid #ccc;
-  font-size: 1.1rem;
+  margin: 0.6rem 0.3rem; padding: 0.7rem 1.2rem; border-radius: 0.6rem;
+  border: 1px solid #ccc; font-size: 1.1rem;
 }
 
 button {
-  cursor: pointer;
-  background: #1976d2;
-  color: #fff;
-  border: none;
-  transition: opacity 0.2s;
+  cursor: pointer; background: #1976d2; color: #fff; border: none; transition: opacity 0.2s;
+}
+button:hover { opacity: 0.9; }
+
+/* 進捗（左上） */
+.progress {
+  position: absolute; top: 0.8rem; left: 0.8rem;
+  font-weight: 600; color: #555; font-size: 1rem;
 }
 
-button:hover {
-  opacity: 0.9;
-}
+/* 赤い中止ボタン（右上） */
+.cancel-btn { position: absolute; top: 0.8rem; right: 0.8rem; background: #e53935; }
 
-/* 赤い中止ボタン */
-.cancel-btn {
-  position: absolute;
-  top: 0.8rem;
-  right: 0.8rem;
-  background: #e53935;
-}
-
-.question {
-  font-size: 2.8rem;
-  margin: 1.8rem 0 0.8rem;
-}
-
-.answer {
-  font-size: 2.4rem;
-  margin: 0 0 1.2rem;
-}
+.question { font-size: 2.8rem; margin: 1.8rem 0 0.8rem; }
+.answer   { font-size: 2.4rem; margin: 0 0 1.2rem; }
 
 .controls {
-  display: flex;
-  justify-content: center;
-  gap: 1.2rem;
-  margin-top: 1.2rem;
+  display: flex; justify-content: center; gap: 1.2rem; margin-top: 1.2rem;
 }
 
 .saved-list {
-  text-align: left;
-  margin: 1.2rem 0 2.2rem;
-  padding-left: 1.4rem;
-  font-size: 1.2rem;
+  text-align: left; margin: 1.2rem 0 2.2rem; padding-left: 1.4rem; font-size: 1.2rem;
 }
+
+/* ふりがなの見え方を少し大きく・読みやすく */
+.question rt, .answer rt { font-size: 0.55em; letter-spacing: 0.06em; }
+
+.ga { margin-left: .15em; }
