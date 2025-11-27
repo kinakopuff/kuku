@@ -1,5 +1,4 @@
 ﻿// script.js
-// test
 'use strict';
 
 const fromDanSelect = document.getElementById('fromDan');
