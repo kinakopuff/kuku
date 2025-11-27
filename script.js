@@ -1,4 +1,5 @@
 ﻿// script.js
+// なにか
 'use strict';
 
 const fromDanSelect = document.getElementById('fromDan');
